@@ -1,0 +1,8 @@
+.DS_Store
+.idea/
+*~
+*.gz
+*.pyc
+__pycache__/
+mnist.pkl
+.ipynb_checkpoints
