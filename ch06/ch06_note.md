@@ -131,3 +131,10 @@ $$
 $ \mu_B $ 和 $ \sigma_B^2 $ ：mini-batch的m个输入的集合 $ B = \{ x_1, x_2, ..., x_m \} $ 的均值和方差。
 
 $ \varepsilon $：一个微小值，为了防止出现除以0的情况。
+
+接着，Batch Norm层会对正规化后的数据进行缩放和平移的变换：
+$$
+\Large y_i = \gamma \hat{x}_i + \beta
+$$
+$ \gamma $ 和 $ \beta $：两个可训练的参数。
+一开始 $ \gamma = 1 $，$ \beta = 0 $，然后再通过学习调整到合适的值。
