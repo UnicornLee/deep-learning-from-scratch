@@ -32,8 +32,8 @@ for i in range(hidden_layer_size):
 
     # 激活函数的种类也改变实验！
     # z = sigmoid(a)
-    z = ReLU(a)
-    # z = tanh(a)
+    # z = ReLU(a)
+    z = tanh(a)
 
     activations[i] = z
 
@@ -42,7 +42,7 @@ for i, a in activations.items():
     plt.subplot(1, len(activations), i+1)
     plt.title(str(i+1) + "-layer") # 图像的标题
     if i != 0: plt.yticks([], [])
-    # plt.xlim(0.1, 1)
-    # plt.ylim(0, 7000)
+    plt.xlim(0.1, 1)
+    plt.ylim(0, 7000)
     plt.hist(a.flatten(), 30, range=(0,1))
 plt.show()

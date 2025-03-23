@@ -8,6 +8,7 @@ from common.util import smooth_curve
 from common.multi_layer_net import MultiLayerNet
 from common.optimizer import SGD
 
+
 # 0:MNIST数据的读取===============
 (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True)
 
